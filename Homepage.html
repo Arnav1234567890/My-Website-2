@@ -1,0 +1,745 @@
+<html>
+    <head>
+    <link rel="shortcut icon" href="logo.ico"/>
+    <title>Nirupa Reading Foundation- Homepage</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    
+    
+    body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0;
+      }
+      .container {
+          margin: 0;
+      }
+      .header {
+          width: 100%;
+          height: 100px;
+          padding: 5px;
+          background-color: rgba(255, 255, 255, 0.61);
+          border-bottom: 3px solid rgba(189, 195, 199, 0.42);
+          position: fixed;
+      }
+      .logo_and_title{
+        width: 40%;
+      }
+      .logo_and_title img{
+        margin-left: 50px;
+      }
+      .logo_and_title h3{
+        margin-top: -59px; 
+        margin-left: 112px; 
+        letter-spacing: 3.7px;
+      }
+      .logo_and_title h1{
+        margin-top: -20px;
+        margin-left: 111px;
+    
+      }
+      .navigation{
+        width: 60%;
+        margin-top: -57.9px;
+        margin-left: 245px;
+      }
+      .navigation li{
+          list-style: none;
+          float: right;
+          padding: 15 33 11 33;
+          color: black;
+      }
+      .navigation li:hover{
+        border-bottom: 3px solid #37424a;
+        text-decoration: none;
+        color: black;
+      }
+      .image_slider{
+          padding-top: 115px;
+      }
+      .image_slider img{
+          margin-left: 65px;
+      }
+      .sub_nav{
+          width: 90%;
+          height: 200px;
+          margin: 25px 50px 0 65px;
+          text-align: justify;
+      }
+      .sub_nav:after {
+              content: '';
+              width: 100%; 
+              display: inline-block;
+        }
+      .sub_nav .box{
+        width: 25%;
+        height: 200px;
+        display: inline-block;
+        margin-right: 63px;
+        margin-top: 1px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+        
+      }
+      .donations_box{
+        width: 25%;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+      }
+      .current_projects{
+        width: 25%;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+      }
+      .contact_us{
+        width: 25%;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+      }
+      .sub_nav .box:hover{
+        background-color: rgba(25, 41, 48, 0.85);
+            -webkit-transition: background-color 0.3s ease-out;
+            -moz-transition: background-color 0.3s ease-out;
+            -o-transition: background-color 0.3s ease-out;
+            transition: background-color 0.3s ease-out;
+      }
+      .sub_nav .box:hover{
+          color: yellow;
+      }
+      .sub_nav .box h3{
+          text-align: center;
+          margin-top: 28%;
+          color: white;
+          font-family: Cooper Hewitt;
+          font-weight: 400;
+          letter-spacing: 0.5;
+          font-size: 16.5px;
+      }
+      
+      .box img {
+        width: 100%;
+        }
+      .sub_container{
+          width: 100%;
+          height: 200px;
+          margin: 15px 50px 0 65px;
+      }
+      .event_a {
+        width: 320px;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+    
+      }
+      .event_b {
+        width: 320px;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+      }
+      .event_c {
+        width: 320px;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+      }
+      .event_d {
+        width: 320px;
+        height: 200px;
+        background-color: rgba(25, 41, 48, 0.60);
+        position: absolute;
+      }
+      .current_events_1 .box{
+        width:320px;
+        background-color: rgba(25, 41, 48, 0.60);
+        height: 200px;
+        display: inline-block;
+        margin-right: 91px;
+        margin-bottom: 25px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        cursor: pointer;
+      }
+      .current_events_2 .box{
+        width:320px;
+        background-color: rgba(25, 41, 48, 0.60);
+        height: 200px;
+        display: inline-block;
+        margin-right: 91px;
+        margin-bottom: 25px; 
+        background-repeat: no-repeat;
+        background-size: 100% 100%; 
+        cursor: pointer;
+      }
+      .event_a:hover{
+        background-color: rgba(25, 41, 48, 0.85);
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+      }
+      .event_a .box h3:hover{
+        color: rgba(215, 178, 33, 1);
+            -webkit-transition: color 0.4s ease-out;
+            -moz-transition: color 0.4s ease-out;
+            -o-transition: color 0.4s ease-out;
+            transition: color 0.4s ease-out;
+      }
+      .event_b:hover{
+        background-color: rgba(25, 41, 48, 0.85);
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+      }
+      .event_b .box h3:hover{
+        color: rgba(215, 178, 33, 1);
+            -webkit-transition: color 0.4s ease-out;
+            -moz-transition: color 0.4s ease-out;
+            -o-transition: color 0.4s ease-out;
+            transition: color 0.4s ease-out;
+      }
+      .event_c:hover{
+        background-color: rgba(25, 41, 48, 0.85);
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+      }
+      .event_c .box h3:hover{
+        color: rgba(215, 178, 33, 1);
+            -webkit-transition: color 0.4s ease-out;
+            -moz-transition: color 0.4s ease-out;
+            -o-transition: color 0.4s ease-out;
+            transition: color 0.4s ease-out;
+      }
+      .event_d:hover{
+        background-color: rgba(25, 41, 48, 0.85);
+        -webkit-transition: background-color 0.3s ease-out;
+        -moz-transition: background-color 0.3s ease-out;
+        -o-transition: background-color 0.3s ease-out;
+        transition: background-color 0.3s ease-out;
+      }
+      .event_d .box h3:hover{
+        color: rgba(215, 178, 33, 1);
+            -webkit-transition: color 0.4s ease-out;
+            -moz-transition: color 0.4s ease-out;
+            -o-transition: color 0.4s ease-out;
+            transition: color 0.4s ease-out;
+      }
+      .current_events .box h3{
+          margin-top: 26%;
+          text-align: center;
+          color: white;
+          font-family: Cooper Hewitt;
+          font-weight: 400;
+          letter-spacing: 0.5;
+          font-size: 16.5px;
+      }
+      .current_events .box h5{
+          margin-top: -2%;
+          text-align: center;
+          color: white;
+          font-family: Cooper Hewitt;
+          font-weight: 400;
+          letter-spacing: 0.5;
+          font-size: 12px;
+      }
+      .social_media_pics{
+        margin-top: -125px;
+        margin-left: 1006px;
+        padding: 3px;
+      }
+      .fa {
+        padding: 10px;
+        font-size: 15px;
+        width: 16px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        }
+
+        .fa-google {
+        background: #dd4b39;
+        color: white;
+        }
+
+        .fa-linkedine {
+        background: #007bb5;
+        color: white;
+        }
+
+        .fa-youtube {
+        background: #bb0000;
+        color: white;
+        }
+
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+      .current{
+        border-bottom: 3px solid #37424a;
+        text-decoration: none;
+        color: black;         
+      }
+      .box_header{
+          font-size: 16px;
+          font-weight: bold;
+          margin: 5px;
+      }
+      .mod{
+          display: inline-block;
+          height: 100%;
+      }
+      .current_events{
+          width: 65%;
+      }
+      .side_bar{
+        width: 31%;
+        float: right;
+        margin-top: 7px;
+      }
+      .search_bar{
+        padding: 10px;
+        background-color: rgba(238, 236, 232, 0.4);
+        width: 299px;
+        height: 39px;
+        margin-top: 60px;
+        margin-left: -50px;
+      }
+      input[type=text]{
+        width: 200px;
+        box-sizing: border-box;
+        border: 2px solid #eeece8;
+        border-radius: 4px;
+        font-size: 16px;
+        font-family: Cooper Hewitt;
+        font-size: 16px;
+        background-color: white;
+        background-image: url(searchicon.png);
+        background-size: 19px;
+        background-position: 5px 9px;
+        background-repeat: no-repeat;
+        padding: 10px 5px 3px 30px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+        height: 40px;
+      }
+      input[type=text]:focus {
+        width: 100%;
+      }
+      .recent_posts{
+        padding: 10px;
+        background-color: rgba(238, 236, 232, 0.4);
+        width: 299px;
+        margin-top: 10px;
+        margin-left: -50px;
+        height: 157px;
+      }
+      .recent_posts h4{
+        font-family: Cooper Hewitt;
+        font-weight: 300;
+        letter-spacing: 0.5;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 1px;
+        color: black;
+      }
+      .archives{
+        padding: 10px;
+        background-color: rgba(238, 236, 232, 0.4);
+        width: 299px;
+        margin-top: 10px;
+        margin-left: -50px;
+        height: 157px;
+      }
+      .archives h4{
+        font-family: Cooper Hewitt;
+        font-weight: 300;
+        letter-spacing: 0.5;
+        font-size: 16px;
+        margin-top: 5px;
+        margin-left: 1px;
+        color: black;
+      }
+      .current_events_1{
+        width: 88%;
+        height: 200px;
+        margin: 25px 45px 0 0px;
+        text-align: justify;
+      }
+      .current_events_1:after {
+        content: '';
+        width: 100%; 
+        display: inline-block;
+      }
+      .current_events_2{
+        width: 88%;
+        height: 200px;
+        margin: 25px 45px 0 0px;
+        text-align: justify;
+      }
+      .current_events_2:after {
+        content: '';
+        width: 100%; 
+        display: inline-block;
+      }
+      .current_events h2{
+          font-family: Cooper Hewitt;
+          font-weight: 500;
+      }
+      .footer_1{
+          width: 100%;
+          height: 180px;
+          padding: 5px;
+          background-color: rgba(238, 236, 232, 0.4);
+          position: absolute;
+          margin-top: 332px;
+          font-family: Cooper Hewitt;
+      }
+      .footer_2{
+          width: 100%;
+          height: 38px;
+          padding: 5px;
+          background-color: rgba(238, 236, 232, 2);
+          position: absolute;
+          margin-top: 522px;
+          font-family: Cooper Hewitt;
+      }
+      .footer_1 li{
+          list-style: none;
+      }
+      .col_1{
+        float: left;
+        width: 27%;
+      }
+      .col_2{
+        float: left;
+        padding-top: 3px;
+        width: 25%;
+      }
+      .col_3{
+        width: 16%;
+        padding-top: 3px;
+        float: left;
+      }
+      .col_4{
+        padding-top: 3px;
+        width: 25%;
+        float: left;
+      }
+      .footer a{
+        text-decoration: none;
+        
+      }
+      .main_organ_1{
+          color:grey;
+          font-size: 18px;
+          font-style: italic;
+      }
+      .main_organ_2{
+          color:grey;
+          font-size: 18px;
+          font-style: italic;
+      }
+      .main_organ_3{
+          color:grey;
+          font-size: 18px;
+          font-style: italic;
+      }
+      .main_organ_4{
+          color:grey;
+          font-size: 18px;
+          font-style: italic;
+      }
+      .footer1 ul li{
+          display:inline-block;
+          text-align: center;
+      }
+      sub_organ_1{
+          font-size: 16px;
+      }
+      sub_organ_2{
+          font-size: 16px;
+      }
+      sub_organ_3{
+          font-size: 16px;
+      }
+      .email_bar{
+        padding: 10px;
+        background-color: rgba(238, 236, 232, 0.1);
+        width: 265px;
+        height: 40px;
+        margin-top: -35px;
+        margin-left: 29px;
+      }
+      input[type=email] {
+        width: 205px;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 10px;
+        background-color: white;
+        padding: 7px 11px 7px 5px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+      input[type=email]:focus {
+        width: 100%;
+      }
+      .copyright{
+          text-align: center;
+          font-family: Cooper Hewitt;
+          font-size: 0.75em;
+          color: black;
+      }
+      .sub_organ_1 a:hover{
+        border-bottom: 3px solid #37424a;
+        text-decoration: none;
+        color: black;  
+      }
+      .sub_organ_2{
+          padding-left: 37px;
+          margin-top: -14px;
+      }
+      .sub_organ_3 a:hover{
+        border-bottom: 3px solid #37424a;
+        text-decoration: none;
+        color: black;    
+      }
+      .fa {
+        padding: 10px;
+        font-size: 15px;
+        width: 16px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+      .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+
+        .fa-twitter {
+        background: #55ACEE;
+        color: white;
+        }
+
+        .fa-google {
+        background: #dd4b39;
+        color: white;
+        }
+
+        .fa-linkedin {
+        background: #007bb5;
+        color: white;
+        }
+
+        .fa-youtube {
+        background: #bb0000;
+        color: white;
+        }
+
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+        .sub_organ_4 p{
+            padding: 0px 0px 18px 39px;
+            font-size: 14px;
+        }
+        .sub_organ_1 a{
+            margin-left:4px;
+        }
+        .sub_organ_1 img{
+            margin-left:1px;
+        }
+      </style>  
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo_and_title">
+                    <img src="logo1.png" width="50" height="100" /> 
+                    <h3>NIRUPA READING</h3>
+                    <h1>FOUNDATION</h1>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <a href="file:///Users/ashishagarwal/Desktop/testweb/My%20Website/Get_Involved.html"><li>Get Involved</li></a>
+                        <a href="file:///Users/ashishagarwal/Desktop/testweb/My%20Website/Contact_Us.html"><li>Contact Us</li></a>
+                        <a href="file:///Users/ashishagarwal/Desktop/testweb/My%20Website/Our_Work.html"><li>Our Work</li></a>
+                        <a href="file:///Users/ashishagarwal/Desktop/testweb/My%20Website/About_Us.html"><li>About Us</li></a>
+                        <li class="current">Home</li>
+                    
+                    </ul>
+                </div>
+                <div class="social_media_pics">
+                    <a href="https://google.co.in">
+                        <a href="https://www.facebook.com/NirupaReadingFoundation/" class="fa fa-facebook"></a>
+                        <a href="https://www.google.co.in" class="fa fa-twitter"></a>
+                        <a href="https://www.google.co.in" class="fa fa-google"></a>
+                        <a href="https://www.google.co.in" class="fa fa-linkedin"></a>
+                        <a href="https://www.google.co.in" class="fa fa-youtube"></a>
+                        <a href="https://www.google.co.in" class="fa fa-instagram"></a>
+                </div>
+            </div>
+            <div class="image_slider">
+                <img src="Samplepic.jpg" width="1150" height="535" /> 
+            </div>
+            <div class="sub_nav">
+                
+                <div class="donations_box box">
+                        <h3>DONATIONS</h3> 
+                </div>
+                    <img src="img1.png" width="320px" height="200px"/>
+                <div class="current_projects box">
+                        <h3>CURRENT PROJECTS</h3>
+                </div>
+                <img src="img2.png" width="320px" height="200px">
+                <div class="contact_us box">
+                        <h3>CONTACT US</h3>
+                </div>
+                <img src="img3.png" width="320px" height="200px">
+            </div>
+            <div class="sub_container">
+                    <div class="current_events mod">
+                        <h2>Current Events</h2>
+                        <div class=current_events_1>
+                                <div class="event_a box">
+                                    <h3>EVENT A</h3>
+                                    <h5>About Sign Up</h5>
+                                </div>
+                                    <img src="img4.jpeg" width="320px" height="200px">
+                                <div class="event_b box">
+                                    <h3>EVENT B</h3>
+                                    <h5>About Sign Up</h5>
+                                </div>
+                                    <img src="img5.jpeg" width="320px" height="200px">
+                        </div>
+                
+                        <div class="current_events_2 ">
+                                <div class="event_c box">
+                                        <h3>EVENT C</h3>
+                                        <h5>About Sign Up</h5>
+                                    </div>
+                                    <img src="img6.jpeg" width="320px" height="200px">
+                                    <div class="event_d box">
+                                        <h3>EVENT D</h3>
+                                        <h5>About Sign Up</h5>
+                                    </div>
+                                    <img src="img7.jpeg" width="320px" height="200px">
+                            </div>
+
+                    </div>
+                    <div class="side_bar mod">
+                            <form>
+                                <div class="search_bar">
+                                    <input type="text" name="search" placeholder="Search"/>
+                                </div>
+                            </form>
+                            <div class="recent_posts">
+                                <h4>Recent Posts</h4>
+
+                            </div>
+                            <div class="archives">
+                                <h4>Archives</h4>
+                            </div>
+                    </div>
+            </div>
+            <div class="footer">
+                <div class="footer_1">
+                    <div class=content_area>
+                        <div class="col_1">
+                            <div class="main_organ_1">
+                                <ul>
+                                    <li><p>CONTACT</p></li>
+                                </ul>
+                            </div>
+                            <div class="sub_organ_1">
+                                <ul>
+                                    <li><img src="6.png" widt="20px" height="20px"><a href="" Link style="color: black">Link</a></li>
+                                    <li><img src="6'.png" widt="20px" height="20px"><a href="" Link style="color: black">nirupareadingfoundation@gmail.com</a></li>
+                                    <li><img src="6''.png" widt="20px" height="20px"><a href="" Link style="color: black">Link</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col_2">
+                            <div class="main_organ_2">
+                                <ul>
+                                    <li><p>CONNECT</p></li>
+                                </ul>
+                            </div>
+                            <div class="sub_organ_2">
+                                <a href="https://www.google.co.in" class="fa fa-facebook"></a>
+                                <a href="https://www.google.co.in" class="fa fa-twitter"></a>
+                                <a href="https://www.google.co.in" class="fa fa-google"></a>
+                                <a href="https://www.google.co.in" class="fa fa-linkedin"></a>
+                                <a href="https://www.google.co.in" class="fa fa-youtube"></a>
+                                <a href="https://www.google.co.in" class="fa fa-instagram"></a>
+                            </div>
+                        </div>
+                        <div class="col_3">
+                            <div class="main_organ_3">
+                                <ul>
+                                    <li><p>NAVIGATE</p></li>
+                                </ul>
+                            </div>
+                            <div class="sub_organ_3">
+                                <ul>
+                                    <li><a href="" Link style="color: black">About Us</a></li>
+                                    <li><a href="" Link style="color: black">Our Work</a></li>
+                                    <li><a href="" Link style="color: black">Contact Us</a></li>
+                                    <li><a href="" Link style="color: black" >Get Involved</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col_4">
+                            <div class="main_organ_4">
+                                <ul>
+                                    <li><p>STAY TUNED</p></li>
+                                </ul>
+                            </div>
+                            <div class="sub_organ_4">
+                                <p>
+                                    Don't forget to register for latest updates...
+                                </p>
+                                <div class="email_bar">
+                                    <form>
+                                            <input type="email" name="EMAIL" placeholder="YOUR EMAIL ADDRESS">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_2">
+                    <div class="copyright">
+                        <p>© Copyright 2017 Nirupa Reading Foundation | Privacy Policy | Terms and Conditions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,93 @@
+<html>
+        <style>
+            body{
+              margin: 0
+            }
+            .container{
+              margin: 0 20px;
+            }
+            .header{
+              width: 100%;
+              height: 60px;
+              background-color: #333;
+              color: white;
+            }
+            .jumbotron{
+              width: 100%;
+              height: 400px;
+              background-color: #CCC;
+              margin: 10px 0;
+            }
+    
+            /* CALL TO ACTION STYLES START */
+            .sub-nav{
+              width: 100%;
+              height: 200px;
+              margin: 10px 0;
+              text-align: justify;
+            }
+            .box{
+                width: 275px;
+                height: 200px;
+                display: inline-block;
+            }
+            /* style for giving equal space between call to action buttons */
+            .sub-nav:after {
+              content: '';
+              width: 100%; /* Ensures there are at least 2 lines of text, so justification works */
+              display: inline-block;
+            }
+            .box_title{
+                width: 275px;
+                height: 200px;
+                background-color: rgba(34, 49, 63, 0.50);
+                position: absolute;
+            }
+            .box_title:hover{
+                background-color: rgba(52, 73, 94, 0.81);
+                -webkit-transition: background-color 1s ease-out;
+                -moz-transition: background-color 1s ease-out;
+                -o-transition: background-color 1s ease-out;
+                transition: background-color 1s ease-out;
+            }
+            .box_title:hover{
+                color: rgba(215, 178, 33, 1);
+                -webkit-transition: color 1s ease-out;
+                -moz-transition: color 1s ease-out;
+                -o-transition: color 1s ease-out;
+                transition: color 1s ease-out;
+            }
+            .box img{
+                width: 100%;
+                height: 100%;
+            }
+            /* CALL TO ACTION STYLES END */
+        </style>
+        <div class="container">
+          <div class="header">
+              <h3>NIRUPA XYZ</h3>
+          </div>
+          <div class="jumbotron">
+          </div>
+          <div class="sub-nav">
+            <div class="donations_box box">
+                <div class="box_title">
+                    <h4>Donation</h4>
+                </div>
+                <img src="img1.png"/>
+            </div>
+            <div class="solutions_box box">
+                <div class="box_title">
+                    <h4>Solution</h4>
+                </div>
+                <img src="img1.png"/>
+            </div>
+            <div class="contact_box box">
+                <div class="box_title">
+                    <h4>Contact</h4>
+                </div>
+                <img src="img1.png"/>
+            </div>
+          </div>
+      </div>
+    </html>
